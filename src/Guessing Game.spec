@@ -11,6 +11,7 @@ a = Analysis(
     datas=[],
     hiddenimports=[],
     hookspath=[],
+    hooksconfig={},
     runtime_hooks=[],
     excludes=[],
     win_no_prefer_redirects=False,
@@ -48,7 +49,7 @@ coll = COLLECT(
     name='Guessing Game',
 )
 app = BUNDLE(
-    coll,
+    exe,
     name='Guessing Game.app',
     icon=None,
     bundle_identifier=None,

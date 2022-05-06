@@ -14,12 +14,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: PyInstaller Windows
-      uses: JackMcKew/pyinstaller-action-windows@main
+      uses: ArrowPC/pyinstaller-action-windows@main
       with:
         path: src
 
     - uses: actions/upload-artifact@v2
       with:
-        name: Guessing Game
+        name: guessing-game
         path: src/dist/windows # or path/to/artifact
 
