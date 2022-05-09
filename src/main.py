@@ -44,7 +44,7 @@ class Widget(QWidget):
 
     def correct(self):
         reply = QMessageBox.information(
-            self, "yo", "The computer was able to guess your number in " + str(guessCounter) + " guesses! Do you want to restart?",
+            self, "That was easy!", "The computer was able to guess your number in " + str(guessCounter) + " guesses! Do you want to restart?",
             QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.Close
         )
         if reply == QMessageBox.StandardButton.Yes:

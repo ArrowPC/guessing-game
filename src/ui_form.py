@@ -111,7 +111,10 @@ class Ui_Widget(object):
     # setupUi
 
     def retranslateUi(self, Widget):
-        Widget.setWindowTitle(QCoreApplication.translate("Widget", u"Widget", None))
+        Widget.setWindowTitle(QCoreApplication.translate("Widget", u"Guessing Game", None))
+#if QT_CONFIG(accessibility)
+        Widget.setAccessibleName(QCoreApplication.translate("Widget", u"Guessing Game", None))
+#endif // QT_CONFIG(accessibility)
         self.label.setText(QCoreApplication.translate("Widget", u"This program can guess the number you're thinking of between 1-100 within 7 guesses!", None))
         self.lblGuess.setText("")
         self.btnLower.setText(QCoreApplication.translate("Widget", u"Lower", None))
